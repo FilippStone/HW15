@@ -17,7 +17,7 @@ def triangle():
     c = int(input(f'Сторона c : '))
 
     if a <= 0 or b <= 0 or c <= 0:
-        logger.info(f'Это не треугольник ({a}, {b}, {c})')
+        logger.error(f'Это не треугольник ({a}, {b}, {c})')
         return 'Это не треугольник'
     elif a == b == c:
         logger.info(f'Треугольник равносторонний ({a}, {b}, {c})')
